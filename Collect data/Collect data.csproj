@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pdf.cs" />
+    <Compile Include="txt.cs" />
+    <Compile Include="pptx.cs" />
+    <Compile Include="docx_doc.cs" />
+    <Compile Include="file_paths.cs" />
+    <Compile Include="xlsx_xls.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
