@@ -5,7 +5,6 @@ namespace Collect_data
 {
     class Program
     {
-        public static string targetPath = "C:\\tmp";
         static void Main(string[] args)
         {
             DirectoryInfo targetFolder = new DirectoryInfo("C:\\tmp");
