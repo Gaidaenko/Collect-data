@@ -19,54 +19,77 @@ namespace Collect_data
                 {
                     Directory.CreateDirectory("C:\\tmp\\Desktop");
 
-                    string result = Path.GetFileName(items);
-                    string copyFile = Path.Combine("C:\\tmp\\Desktop", result);
+                    string resultDesktop = Path.GetFileName(items);
+                    string copyFile = Path.Combine("C:\\tmp\\Desktop", resultDesktop);
                     File.Copy(items, copyFile, true);
                 }
-
-                Console.WriteLine(items);
             }
 
             foreach (var items in file_paths.files_docx_documets)
             {
-                string result = items;
-                Console.WriteLine(result);
+                if (targetFolder.Exists)
+                {
+                    Directory.CreateDirectory("C:\\tmp\\Documents");
+
+                    string resultDocuments = Path.GetFileName(items);
+                    string copyFile = Path.Combine("C:\\tmp\\Documents", resultDocuments);
+                    File.Copy(items, copyFile, true);
+                }
             }
 
             foreach (var items in file_paths.files_docx_downloads)
             {
-                string result = items;
-                Console.WriteLine(result);
+                if (targetFolder.Exists)
+                {
+                    Directory.CreateDirectory("C:\\tmp\\Downloads");
+
+                    string resultDownloads = Path.GetFileName(items);
+                    string copyFiles = Path.Combine("C:\\tmp\\Downloads", resultDownloads);
+                    File.Copy(items,copyFiles, true);              
+                }   
             }
 
             foreach (var items in file_paths.files_docx_C)
             {
-                string result = items;
-                Console.WriteLine(result);
+                if (targetFolder.Exists)
+                {
+                    Directory.CreateDirectory("C:\\tmp\\disk_C");
+
+                    string resultC = Path.GetFileName(items);
+                    string copyFiles = Path.Combine("C:\\tmp\\disk_C", resultC);
+                    File.Copy(items, copyFiles, true);                
+                }
             }
 
             foreach (var items in file_paths.files_doc_desktop)
             {
-                string result = items;
-                Console.WriteLine(result);
+                if (targetFolder.Exists)
+                {
+                    string resultDesktop = Path.GetFileName(items);
+                    string copyFile = Path.Combine("C:\\tmp\\Desktop", resultDesktop);
+                    File.Copy(items, copyFile, true);
+                }
             }
 
             foreach (var items in file_paths.files_doc_documets)
             {
-                string result = items;
-                Console.WriteLine(result);
+                string resultDocuments = Path.GetFileName(items);
+                string copyFile = Path.Combine("C:\\tmp\\Documents", resultDocuments);
+                File.Copy(items, copyFile, true);
             }
 
             foreach (var items in file_paths.files_doc_downloads)
             {
-                string result = items;
-                Console.WriteLine(result);
+                string resultDownloads = Path.GetFileName(items);
+                string copyFiles = Path.Combine("C:\\tmp\\Downloads", resultDownloads);
+                File.Copy(items, copyFiles, true);
             }
 
             foreach (var items in file_paths.files_doc_C)
             {
-                string result = items;
-                Console.WriteLine(result);
+                string resultC = Path.GetFileName(items);
+                string copyFiles = Path.Combine("C:\\tmp\\disk_C", resultC);
+                File.Copy(items, copyFiles, true);
             }
         }
     }
