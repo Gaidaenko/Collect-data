@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="pdf.cs" />
     <Compile Include="txt.cs" />
-    <Compile Include="pptx.cs" />
+    <Compile Include="pptx_ppt.cs" />
     <Compile Include="docx_doc.cs" />
     <Compile Include="file_paths.cs" />
     <Compile Include="xlsx_xls.cs" />

