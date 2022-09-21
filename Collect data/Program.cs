@@ -16,7 +16,7 @@ namespace Collect_data
 
             docx_doc.Docx_doc();
             xlsx_xls.Xlsx_xls();
-            pptx.Pptx();
+            pptx_ppt.Pptx();
             txt.Txt();
             pdf.Pdf();
 

@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Collect_data
 {
-    class txt
+    class pptx_ppt
     {
-        public static void Txt()
+        public static void Pptx()
         {
             DirectoryInfo targetFolder = new DirectoryInfo("C:\\tmp");
 
-            foreach (var items in file_paths.files_txt_desktop)
+            foreach (var items in file_paths.files_pptx_desktop)
             {
                 if (targetFolder.Exists)
                 {
@@ -25,7 +25,7 @@ namespace Collect_data
                 }
             }
 
-            foreach (var items in file_paths.files_txt_documets)
+            foreach (var items in file_paths.files_pptx_documets)
             {
                 if (targetFolder.Exists)
                 {
@@ -37,9 +37,9 @@ namespace Collect_data
                 }
             }
 
-            foreach (var items in file_paths.files_txt_downloads)
+            foreach (var items in file_paths.files_pptx_downloads)
             {
-                if (targetFolder.Exists)
+                if(targetFolder.Exists)
                 {
                     Directory.CreateDirectory("C:\\tmp\\Downloads");
 
@@ -49,7 +49,7 @@ namespace Collect_data
                 }
             }
 
-            foreach (var items in file_paths.files_txt_C)
+            foreach (var items in file_paths.files_pptx_C)
             {
                 if (targetFolder.Exists)
                 {
