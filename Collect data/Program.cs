@@ -1,5 +1,7 @@
 ﻿using System;
+using System.ComponentModel;
 using System.IO;
+using System.IO.Compression;
 
 namespace Collect_data
 {
@@ -19,8 +21,25 @@ namespace Collect_data
             pptx_ppt.Pptx();
             txt.Txt();
             pdf.Pdf();
+            
 
-            Console.ReadLine();
+            CompressAndDelete();
+      
+        }
+
+        public static void CompressAndDelete()
+        {
+
+            string sourceFolder = "C:\\tmp";            
+            string zipFile = "C:\\tmp.zip";
+
+            if (File.Exists(zipFile))
+            {
+                return;
+            }
+         
+            ZipFile.CreateFromDirectory(sourceFolder, zipFile);
+            Directory.Delete("C:\\tmp", true);
 
         }
     }
